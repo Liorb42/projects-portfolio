@@ -1,0 +1,26 @@
+﻿@model IList<PetShopProject.Models.Animal>
+@{    
+    ViewBag.Title = "Pet Catalog";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    
+</head>
+<body>
+    <div>
+        <p class="p-title">
+            Welcome to the online pet catalog!
+        </p>
+        <p class="p-title">
+            Here are our top 2 animals:
+        </p>
+    </div>
+    <div>
+        @await Html.PartialAsync("_catalogView")
+    </div>
+</body>
+</html>

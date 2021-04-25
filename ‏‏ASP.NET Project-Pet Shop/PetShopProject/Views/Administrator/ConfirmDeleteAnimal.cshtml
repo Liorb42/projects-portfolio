@@ -1,0 +1,33 @@
+﻿@model PetShopProject.Models.Animal
+@{
+    ViewBag.Title = "Delete Animal";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <h3>Are you sure you want to delete "@Model.Name"?</h3>
+    <div class="div-animal-details">
+        <div>
+            <img src="@Url.Action("GetImage", "Home", new { path = Model.PictureUrl })" />
+        </div>
+        <br />        
+        <br />
+        <div>
+            <span>Catagory:</span>
+            <br />
+            <span>@Model.Catagory.Name</span>
+        </div>
+        <br />
+    </div>
+    <div>
+        <input class="btn-delete" id ="dialog" type="button" value="Delete" onclick="location.href='@Url.Action("DeleteAnimal", "Administrator",new { id = Model.Id })'" />
+        <input class="btn-delete" id="dialog" type="button" value="Cancel" onclick="location.href='@Url.Action("EditCatalog", "Administrator")'" />
+    </div>
+</body>
+</html>

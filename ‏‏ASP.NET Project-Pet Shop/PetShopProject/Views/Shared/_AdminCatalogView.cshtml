@@ -1,0 +1,62 @@
+﻿@model IEnumerable<PetShopProject.Models.Animal>
+
+<table>
+    @if (Model.Count() > 0)
+    {
+        <tr>
+            <td>
+                Picture
+            </td>
+            <td>
+                Animal Name
+            </td>
+            <td>
+                Description
+            </td>
+            <td>
+                Comments
+            </td>
+        </tr>
+    }
+
+
+    @foreach (var animal in Model)
+    {
+<tr>
+    <td>
+        <img src="@Url.Action("GetImage","Home", new { path = animal.PictureUrl })" />
+    </td>
+    <td>
+        <a asp-action="AnimalDetails" asp-controller="Home" asp-route-id="@animal.Id">@animal.Name</a>
+    </td>
+    <td class="td-description">
+        @animal.Description
+    </td>
+
+    @if (@animal.Comments != null)
+    {
+        <td>
+            @animal.Comments.Count
+        </td>
+    }
+    else
+    {
+        <td>
+            0
+        </td>
+    }
+
+
+    <td>
+        <input type="button" value="Edit" onclick="location.href='@Url.Action("EditAnimal", "Administrator",new { id = animal.Id })'" />
+    </td>
+
+    <td>
+        <input type="button" value="Delete" onclick="location.href='@Url.Action("ConfirmDeleteAnimal", "Administrator",new { id = animal.Id })'" />
+    </td>
+
+</tr>
+    }
+</table>
+
+

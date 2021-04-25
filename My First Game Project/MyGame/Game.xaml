@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="MyGame.Game"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Canvas x:Name="GameBoard" Background="Black" Width="1080" Height="720">
+        <Image Source="/Assets/background2.png" Canvas.Top="-0" Canvas.Left="-0" Height="720" Width="1080" Opacity="0.4" />
+        <TextBlock x:Name="GameLoopTest" Foreground="Yellow"/>
+        <TextBlock x:Name="ScoreTextBox"  Foreground="LightGoldenrodYellow" FontFamily="Kristen ITC" FontWeight="Bold"
+                       Canvas.Left="924" Canvas.Top="20" Height="20" Width="80"/>
+        <Image Source="/Assets/bannana.png" Height="20" Width="50" Canvas.Left="988" Canvas.Top="20"/>
+        <Button Content="Back To Menu" Foreground="LightGoldenrodYellow" FontFamily="Kristen ITC" FontWeight="Bold" 
+                    Height="50" Width="150" Canvas.Top="40" Click="BackToMenu_click"/>
+        <Button x:Name="ToggleTimerBtn" Content="Pause Game" Foreground="LightGoldenrodYellow" FontFamily="Kristen ITC" FontWeight="Bold"  
+                    Click="ToggleTimerBtn_Click" Canvas.Top="0" Height="50" Width="150"/>
+        <Image x:Name="Line" Source="/Assets/bed22.png" Canvas.Left="399" Canvas.Top="592" Height="58" Width="273" />
+
+
+    </Canvas>
+
+</Page>

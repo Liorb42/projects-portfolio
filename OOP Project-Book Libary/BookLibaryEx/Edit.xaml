@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="BookLibaryEx.Edit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BookLibaryEx"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+     Width="1000" Height="800"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Width="1000" Height="800">
+        <Image Source="/Assets/booksBackground.JPG" Margin="0,0,0,0" Opacity="0.3"/>
+        <Rectangle HorizontalAlignment="Center" Height="667" Margin="0,69,0,0" Stroke="Black" VerticalAlignment="Top" Width="997" FocusVisualPrimaryBrush="#0C000000" Fill="#1937CAC7"/>
+
+        <Button x:Name="Edit_btn" Content="Save Changes" Margin="538,532,0,0" VerticalAlignment="Top" Height="55" Width="200" Background="#FFFAFAFA" FontSize="20" FontFamily="Eras ITC" Click="Edit_btn_Click"/>
+
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="167,81,0,0" Text="Edit" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Visible" FontSize="30" Height="73" Width="289" />
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="45,175,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="45,318,0,0" Text="ISBN / ISSN" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="45,416,0,0" Text="Printing date" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="45,472,0,0" Text="Price" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="45,273,0,0" Text="Publisher" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="45,374,0,0" Text="Edition" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="45,523,0,0" Text="Summery" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="526,177,0,0" Text="Genres" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="45,220,0,0" Text="Author" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox FontFamily="Eras ITC" x:Name="Name_txt" HorizontalAlignment="Left" Margin="134,168,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" PlaceholderText="name" TextChanged="Name_txt_TextChanged"/>
+        <TextBox FontFamily="Eras ITC" x:Name="Author_txt" HorizontalAlignment="Left" Margin="134,214,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" PlaceholderText="Author" TextChanged="Author_txt_TextChanged"/>
+        <TextBox FontFamily="Eras ITC" x:Name="Publisher_txt" HorizontalAlignment="Left" Margin="134,260,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" PlaceholderText="Publisher" TextChanged="Publisher_txt_TextChanged"/>
+        <TextBox FontFamily="Eras ITC" x:Name="ISBN_ISSN_txt" HorizontalAlignment="Left" Margin="134,312,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" PlaceholderText="ISBN / ISSN" InputScope="Default" TextChanged="ISBN_ISSN_txt_TextChanged"/>
+        <TextBox FontFamily="Eras ITC" x:Name="Edition_txt" HorizontalAlignment="Left" Margin="134,362,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" PlaceholderText="Edition" InputScope="Default" TextChanged="Edition_txt_TextChanged" />
+        <TextBox FontFamily="Eras ITC" x:Name="Price_txt" HorizontalAlignment="Left" Margin="134,464,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" PlaceholderText="Price" InputScope="Default" TextChanged="Price_txt_TextChanged"/>
+        <TextBox FontFamily="Eras ITC" x:Name="Summary_txt" HorizontalAlignment="Left" Margin="134,526,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" PlaceholderText="Summary" InputScope="Default" Height="123" TextChanged="Summary_txt_TextChanged"/>
+        <DatePicker FontFamily="Eras ITC" x:Name="PrintingDate_picker" Margin="134,412,0,0" VerticalAlignment="Top" SelectedDateChanged="PrintingDate_picker_SelectedDateChanged" DayVisible="False"/>
+        <TextBlock FontFamily="Eras ITC" x:Name="Error_txt" HorizontalAlignment="Left" Margin="158,672,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="567" Foreground="#FFFD1D0C"/>
+        <Button x:Name="BackToStart_btn" Content="Back to Start" Margin="785,538,0,0" VerticalAlignment="Top" Height="46" Width="155" Background="#FFFAFAFA" FontSize="20" FontFamily="Eras ITC" Click="BackToStart_Click"/>
+        <Canvas x:Name="Genre_canvas" Margin="574,179,75,469"/>
+        <Canvas x:Name="Frequency_canvas" Margin="597,361,52,369"/>
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="279,476,0,0" Text="Discount" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox FontFamily="Eras ITC" x:Name="Discount_txt" HorizontalAlignment="Left" Margin="364,468,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" PlaceholderText="Discount" InputScope="Default" TextChanged="Discount_txt_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="451,476,0,0" Text="%" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" />
+        <Button x:Name="BackToSearch_btn" Content="Back to Search" Margin="785,598,0,0" VerticalAlignment="Top" Height="46" Width="155" Background="#FFFAFAFA" FontSize="20" FontFamily="Eras ITC" Click="BackToSearch_Click"/>
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="499,474,0,0" Text="Inventory units" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox FontFamily="Eras ITC" x:Name="Inventory_txt" HorizontalAlignment="Left" Margin="612,472,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" PlaceholderText="Units" InputScope="Default" TextChanged="Inventory_txt_TextChanged"/>
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="512,365,0,0" Text="Frequency" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock FontFamily="Eras ITC" HorizontalAlignment="Left" Margin="757,474,0,0" Text="Issue" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox FontFamily="Eras ITC" x:Name="Issue_txt" HorizontalAlignment="Left" Margin="804,472,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" PlaceholderText="Issue" InputScope="Default" TextChanged="Issue_txt_TextChanged"/>
+
+    </Grid>
+</Page>

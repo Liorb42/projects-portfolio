@@ -1,0 +1,20 @@
+﻿<Page 
+    x:Class="BookLibaryEx.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BookLibaryEx"       
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Width="1000" Height="800"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid >
+        <Image Source="/Assets/booksBackground.JPG" Margin="0,0,0,0" Opacity="0.3"/>
+        <Button x:Name="Start_btn" Content="Start" IsEnabled="False" Margin="295,332,0,0" VerticalAlignment="Top" Height="88" Width="400" Background="#FFFAFAFA" FontSize="30" FontFamily="Eras ITC" Click="Start_btn_Click"/>
+        <Button x:Name="Exit_btn" Content="Exit" Margin="0,565,0,0" Height="58" Width="200" Background="#FFFAFAFA" FontSize="20" FontFamily="Eras ITC" VerticalAlignment="Top" Click="Exit_btn_Click" HorizontalAlignment="Center"/>
+        <Button x:Name="Stock_btn" Content="Init Stock" Margin="0,157,0,0" Height="59" Width="255" Background="#FFFAFAFA" FontSize="20" FontFamily="Eras ITC" VerticalAlignment="Top" Click="Stock_btn_Click" HorizontalAlignment="Center"/>
+    </Grid>
+
+</Page>
+

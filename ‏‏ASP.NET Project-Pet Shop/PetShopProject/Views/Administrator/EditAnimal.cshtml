@@ -1,0 +1,79 @@
+﻿@model PetShopProject.ViewModels.EditAnimalViewModel
+@{
+    ViewBag.Title = "Edit Animal";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <p class="p-title">Edit Animal</p>
+
+    <form asp-action="UpdateAnimal" asp-controller="Administrator" asp-route-Animal.Id="@Model.Animal.Id" enctype="multipart/form-data" method="post">
+        <img src="@Url.Action("GetImage", "Home", new { path = Model.Animal.PictureUrl })" width="100" />
+        <br />
+        <table>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.Animal.Name)
+                </td>
+                <td>
+                    @Html.EditorFor(m => m.Animal.Name)
+                </td>
+                <td>
+                    @Html.ValidationMessageFor(m => m.Animal.Name)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.Animal.Age)
+                </td>
+                <td>
+                    @Html.EditorFor(m => m.Animal.Age)
+                </td>
+                <td>
+                    @Html.ValidationMessageFor(m => m.Animal.Age)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.Animal.PictureUrl)
+                </td>
+                <td>
+                    @Html.EditorFor(m => m.Animal.PictureUrl)
+                </td>
+                <td>
+                    <input type="file" asp-for="PictureFile">
+                </td>
+                @if (Model.PictureErrorMsg != null)
+                {
+                    <td>
+                        @Model.PictureErrorMsg
+                    </td>
+
+                }
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.Animal.Description)
+                </td>
+                <td>
+                    @Html.EditorFor(m => m.Animal.Description)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Catagoy</label>
+                </td>
+                <td>
+                    @Html.DropDownListFor(a => a.Animal.CatagoryId, new SelectList(Model.Catagories, "Id", "Name"))
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Save" class="btn-post-animal" />
+    </form>
+</body>
+</html>

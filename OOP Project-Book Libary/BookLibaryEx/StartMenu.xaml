@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="BookLibaryEx.StartMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BookLibaryEx"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Width="1000" Height="800"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Image Source="/Assets/booksBackground.JPG" Margin="0,0,0,0" Opacity="0.3"/>
+        <Rectangle Fill="#31E6F79A"/>
+        <Button x:Name="AddBook_btn" Content="Add Item"  Margin="295,210,0,0" VerticalAlignment="Top" Height="88" Width="400" Background="#FFFAFAFA" FontSize="30" FontFamily="Eras ITC" Click="AddBook_btn_Click"/>
+        <Button x:Name="Search_btn" Content="Search" Margin="295,347,0,0"  Height="88" Width="400" Background="#FFFAFAFA" FontSize="30" FontFamily="Eras ITC" Click="Search_btn_Click" VerticalAlignment="Top"/>
+        <Button x:Name="Exit_btn" Content="Exit" Margin="295,477,0,0" Height="88" Width="400" Background="#FFFAFAFA" FontSize="30" FontFamily="Eras ITC" VerticalAlignment="Top" Click="Exit_btn_Click"/>
+    </Grid>
+</Page>

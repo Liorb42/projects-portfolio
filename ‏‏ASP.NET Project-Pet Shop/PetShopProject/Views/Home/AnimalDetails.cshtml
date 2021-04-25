@@ -1,0 +1,60 @@
+﻿@model PetShopProject.ViewModels.AnimalDetailsViewModel
+
+@{
+    ViewBag.Title = "Animal Details";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <h3>@Model.Animal.Name</h3>
+    <div class="div-animal-details">
+        <div>
+            <img src="@Url.Action("GetImage", new { path = Model.Animal.PictureUrl })" />
+        </div>
+        <br />
+        <div>
+            <span>Description:</span>
+            <br />
+            @Model.Animal.Description
+        </div>
+        <br />
+        <div>
+            <span>Catagory:</span>
+            <br />
+            <span>@Model.Animal.Catagory.Name</span>
+        </div>
+        <br />
+        <div class="div-comments">
+            <span>Comments:</span>
+            <br />
+            @if (Model.Animal.Comments != null)
+            {
+                int count = 1;
+
+                foreach (var comment in Model.Animal.Comments)
+                {
+                    @count@:.  @comment.CommentText
+                    <br />
+                    count++;
+                }
+            }
+        </div>
+        <br />
+        <div>
+            <span >Enter your comment here:</span>
+
+            <form asp-action="UpdateComment" asp-controller="Home" asp-route-animalId="@Model.Animal.Id" method="post">
+                @Html.EditorFor(m => m.Comment.CommentText)
+                <input type="submit" value="Add comment" /> 
+                <span>@Html.ValidationMessageFor(m => m.Comment.CommentText)</span>
+            </form>     
+            
+        </div>
+    </div> 
+</body>
+</html>

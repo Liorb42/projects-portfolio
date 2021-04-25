@@ -1,0 +1,87 @@
+﻿* {
+    font-family: 'Ink Free';
+}
+
+body {
+    padding-top: 80px;
+    padding-left: 200px;
+    padding-right: 100px;
+    color: cadetblue;
+    font-size: 20px;
+    align-items: center;    
+}
+.nav-bar {
+    position: fixed;
+    align-content: center;
+    padding: 20px;
+    padding-left: 150px;
+    font-size: 30px;
+    background-color: cadetblue;
+    color: floralwhite;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.menu-container {
+    position: fixed;
+    padding: 10px;
+    background-color: cadetblue;
+    top: 0;
+    right: 80px;
+}
+.nav-bar-menu-item {
+    color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img {
+    width: 150px;
+    border-radius: 5px;
+}
+.p-title {
+    font-size: 30px;
+    color: cadetblue;
+    display: block;
+    margin-left: 20px;
+}
+table {
+    margin-left: 20px;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+}
+td {    
+    font-size: 20px;
+    padding: 10px;
+    
+}
+.td-description {
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+}
+.span-regular {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.btn-post-animal {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+textarea{
+    width: 300px;
+    height:200px;
+}
+.div-animal-details{
+    width: 700px
+}
+.div-comments{
+    font-size: 20px;
+}
+select, input {
+    color: cadetblue;    
+}
+.btn-delete{
+    font-size: 20px;
+}

@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="MyGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Canvas Background="Black" Width="1080" Height="720">
+
+        <Image Source="/Assets/background2.png" Canvas.Left="-0" Height="720" Width="1080" Opacity="0.4" />
+        <Image Source="/Assets/sparkles2.gif" Canvas.Left="310" Canvas.Top="72" Height="543" Width="540"/>
+        <Image Source="/Assets/monkeyBackground.png" Canvas.Left="415" Canvas.Top="90" Height="682" Width="347"/>
+        <Button Content="Start" FontSize="60" Background="Transparent" Foreground="LightGoldenrodYellow" FontFamily="Kristen ITC" FontWeight="Bold" 
+                Click="StartButton_click" Canvas.Left="105" Canvas.Top="260" />
+        <Button Content="Exit" FontSize="60" Background="Transparent"  Foreground="LightGoldenrodYellow" FontFamily="Kristen ITC" FontWeight="Bold" 
+                Click="ExitButton_click"  Canvas.Left="121" Canvas.Top="376"  />
+        <TextBlock Text="Catch The Bannana" FontSize="85" Foreground="Yellow" FontFamily="Kristen ITC" FontWeight="Bold"
+                   Height="108" Width="872" Canvas.Left="109" Canvas.Top="23"  />
+        <TextBlock Text="©Lior Barasovsky" FontSize="20" Foreground="LightGoldenrodYellow" FontFamily="Kristen ITC" FontWeight="Bold" 
+                   Canvas.Left="898" Canvas.Top="683" />
+
+    </Canvas>
+</Page>

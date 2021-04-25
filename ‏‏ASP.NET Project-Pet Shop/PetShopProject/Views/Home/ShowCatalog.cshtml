@@ -1,0 +1,47 @@
+﻿@model PetShopProject.ViewModels.ShowCatalogViewModel
+@{
+    ViewBag.Title = "Catalog";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />  
+
+</head>
+<body>
+    <p class="p-title">Catalog</p>
+
+    <div>
+        <form action="ShowSelection" method="post">
+            <span class="span-regular">Catagory</span>
+            <select id="select-box" name="select-box">
+                <option value="0">All</option>
+                @for (int i = 0; i < Model.Catagories.Count(); i++)
+                {
+                    <option value="@Model.Catagories[i].Id">@Model.Catagories[i].Name</option>
+                }
+            </select>
+        </form>
+    </div>
+    <div id="catalog-view">
+        @await Html.PartialAsync("_catalogView", Model.Animals)
+    </div>
+    <script type="text/javascript">
+    $(function () {
+        $('#select-box').change(function () {
+            var id = $(this).val();
+            $("#catalog-view").empty();
+            $.ajax({
+                    url: '@Url.Action("ShowSelection")',
+                    type: 'GET',
+                    data: { id: id }
+                }).done(function(result){
+                    $('#catalog-view').html(result);
+                    });
+        });
+    });
+    </script>
+</body>
+</html>
