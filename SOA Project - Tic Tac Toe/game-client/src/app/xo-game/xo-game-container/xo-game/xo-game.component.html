@@ -1,0 +1,35 @@
+<div>
+  <h6>
+    &nbsp;hello <span class="blue">{{ player.name }}</span
+    >! you are playing &nbsp;
+    <span class="green big-font"> {{ playingSymbol }}</span>
+  </h6>
+  <div *ngIf="!isGameEnded">
+    <div>
+      <h6 class="green">&nbsp;{{ messageText }}</h6>
+    </div>
+  </div>
+
+  <div *ngIf="isGameEnded">
+    <h6 class="red">&nbsp;Unexpected end of game</h6>
+  </div>
+  <ng-container *ngIf="currentGame">
+    <div>
+      <div *ngFor="let row of currentGame.gameMtx; let i = index" class="row">
+        <div *ngFor="let col of row; let j = index" class="square column">
+          <span
+            class="badge bg-primary"
+            [innerHTML]="col"
+            (click)="makeMove(i, j)"
+          >
+          </span>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <div class="container">
+    <button (click)="endGame()" class="btn btn-primary">
+      {{ bottonText }}
+    </button>
+  </div>
+</div>

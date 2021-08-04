@@ -1,0 +1,12 @@
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\FlightsGenerator\bin\Debug\netcoreapp3.1\FlightsGenerator.deps.json
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\FlightsGenerator\bin\Debug\netcoreapp3.1\FlightsGenerator.dll
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\FlightsGenerator\bin\Debug\netcoreapp3.1\FlightsGenerator.pdb
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\FlightsGenerator\bin\Debug\netcoreapp3.1\AirportSimulatorShared.dll
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\FlightsGenerator\bin\Debug\netcoreapp3.1\AirportSimulatorShared.pdb
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\FlightsGenerator\obj\Debug\netcoreapp3.1\FlightsGenerator.csprojAssemblyReference.cache
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\FlightsGenerator\obj\Debug\netcoreapp3.1\FlightsGenerator.AssemblyInfoInputs.cache
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\FlightsGenerator\obj\Debug\netcoreapp3.1\FlightsGenerator.AssemblyInfo.cs
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\FlightsGenerator\obj\Debug\netcoreapp3.1\FlightsGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\FlightsGenerator\obj\Debug\netcoreapp3.1\FlightsGenerator.csproj.CopyComplete
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\FlightsGenerator\obj\Debug\netcoreapp3.1\FlightsGenerator.dll
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\FlightsGenerator\obj\Debug\netcoreapp3.1\FlightsGenerator.pdb

@@ -1,0 +1,19 @@
+<ng-container *ngIf="recievedRequests">
+  <div *ngFor="let req of recievedRequests">
+    <p class="bs-component">player {{ req[1] }} is inviting you to play</p>
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="respondeToGameRequest(true, req[0])"
+    >
+      accept
+    </button>
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="respondeToGameRequest(false, req[0])"
+    >
+      deny
+    </button>
+  </div>
+</ng-container>

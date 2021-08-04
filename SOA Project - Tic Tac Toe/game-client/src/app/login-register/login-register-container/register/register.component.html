@@ -1,0 +1,123 @@
+<div class="center">
+  <form #registerForm="ngForm">
+    <label class="control-label" for="nameInput">Name</label>
+    <input
+      id="nameInput"
+      name="nameInput"
+      class="form-control"
+      type="text"
+      required
+      minlength="4"
+      [(ngModel)]="name"
+      #nameInput="ngModel"
+      placeholder="enter name"
+      (keyup.enter)="
+        register(nameInput.value, emailInput.value, passwordInput.value)
+      "
+    />
+    <label class="control-label" for="emailInput">Email</label>
+    <input
+      id="emailInput"
+      name="emailInput"
+      class="form-control"
+      type="email"
+      required
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+      [(ngModel)]="email"
+      #emailInput="ngModel"
+      placeholder="enter email"
+      (keyup.enter)="
+        register(nameInput.value, emailInput.value, passwordInput.value)
+      "
+    />
+    <label class="control-label" for="passwordInput">Password</label>
+    <input
+      id="passwordInput"
+      name="passwordInput"
+      class="form-control"
+      type="password"
+      required
+      pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+      [(ngModel)]="password"
+      #passwordInput="ngModel"
+      placeholder="enter password"
+      (keyup.enter)="
+        register(nameInput.value, emailInput.value, passwordInput.value)
+      "
+    />
+    <label class="control-label" for="confirmPasswordInput"
+      >Confirm Password</label
+    >
+    <input
+      id="confirmPasswordInput"
+      name="confirmPasswordInput"
+      class="form-control"
+      type="password"
+      required
+      pattern="{{ password }}"
+      [(ngModel)]="confirmPassword"
+      #confirmPasswordInput="ngModel"
+      placeholder="confirm password"
+      (keyup.enter)="
+        register(nameInput.value, emailInput.value, passwordInput.value)
+      "
+    />
+
+    <p>
+      <button
+        type="submit"
+        [disabled]="registerForm.form.invalid"
+        class="btn btn-primary"
+        (click)="
+          register(nameInput.value, emailInput.value, passwordInput.value)
+        "
+      >
+        Register
+      </button>
+      <button type="button" class="btn btn-primary" (click)="goToLogin()">
+        Go to Login
+      </button>
+    </p>
+    <div>
+      <p class="blue">{{ serverMsg }}</p>
+    </div>
+    <div
+      *ngIf="nameInput.invalid && (nameInput.dirty || nameInput.touched)"
+      class="red"
+    >
+      <div *ngIf="nameInput.errors?.required">Name is required.</div>
+      <div *ngIf="nameInput.errors?.minlength">
+        Name must be at least 4 characters long.
+      </div>
+    </div>
+    <div
+      *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)"
+      class="red"
+    >
+      <div *ngIf="emailInput.errors?.required">Email is required.</div>
+      <div *ngIf="emailInput.errors?.pattern">email address is invalid</div>
+    </div>
+    <div
+      *ngIf="
+        passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)
+      "
+      class="red"
+    >
+      <div *ngIf="passwordInput.errors?.required">Password is required.</div>
+      <div *ngIf="passwordInput.errors?.pattern">
+        Password should be at least 8 characters long and should contain at
+        least one letter and one number
+      </div>
+    </div>
+    <div
+      *ngIf="
+        confirmPasswordInput.invalid &&
+        (confirmPasswordInput.dirty || confirmPasswordInput.touched)
+      "
+      class="red"
+    >
+      <div *ngIf="passwordInput.errors?.required">Confirm password</div>
+      <div *ngIf="!isPasswordMatch">Password & Confirm don't match</div>
+    </div>
+  </form>
+</div>

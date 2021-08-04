@@ -1,0 +1,12 @@
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\AirportSimulatorLogic\obj\Debug\netcoreapp3.1\AirportSimulatorLogic.csprojAssemblyReference.cache
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\AirportSimulatorLogic\obj\Debug\netcoreapp3.1\AirportSimulatorLogic.AssemblyInfoInputs.cache
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\AirportSimulatorLogic\obj\Debug\netcoreapp3.1\AirportSimulatorLogic.AssemblyInfo.cs
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\AirportSimulatorLogic\obj\Debug\netcoreapp3.1\AirportSimulatorLogic.csproj.CoreCompileInputs.cache
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\AirportSimulatorLogic\bin\Debug\netcoreapp3.1\AirportSimulatorLogic.deps.json
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\AirportSimulatorLogic\bin\Debug\netcoreapp3.1\AirportSimulatorLogic.dll
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\AirportSimulatorLogic\bin\Debug\netcoreapp3.1\AirportSimulatorLogic.pdb
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\AirportSimulatorLogic\bin\Debug\netcoreapp3.1\AirportSimulatorShared.dll
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\AirportSimulatorLogic\bin\Debug\netcoreapp3.1\AirportSimulatorShared.pdb
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\AirportSimulatorLogic\obj\Debug\netcoreapp3.1\AirportSimulatorLogic.csproj.CopyComplete
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\AirportSimulatorLogic\obj\Debug\netcoreapp3.1\AirportSimulatorLogic.dll
+C:\Users\Lior Barasovsky\Desktop\Sela\Final Project\myProject\AirportSimulator\AirportSimulatorLogic\obj\Debug\netcoreapp3.1\AirportSimulatorLogic.pdb

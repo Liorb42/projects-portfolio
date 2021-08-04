@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>AirportSimulatorShared</AssemblyName>
+    <RootNamespace>AirportSimulatorShared</RootNamespace>
+    <OutputType>WinExe</OutputType>
+  </PropertyGroup>
+
+</Project>

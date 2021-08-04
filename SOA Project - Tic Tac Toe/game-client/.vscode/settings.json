@@ -1,0 +1,5 @@
+{
+    "appService.showBuildDuringDeployPrompt": false,
+    "appService.deploySubpath": "dist\\game-client",
+    "appService.defaultWebAppToDeploy": "/subscriptions/a3fc76d9-34d0-498f-85e4-4d35cb1f4d4b/resourceGroups/tic-tac-toe/providers/Microsoft.Web/sites/tic-tac-toe-sela"
+}

@@ -1,0 +1,10 @@
+<button
+  class="btn btn-primary smaller"
+  [disabled]="isDisabled"
+  (click)="toggleGamerequest()"
+  [ngClass]="{
+    selected: isRequestSent
+  }"
+>
+  {{ bottonText }}
+</button>

@@ -1,0 +1,37 @@
+<div class="center">
+  <label class="control-label" for="nameInput">Name</label>
+  <input
+    name="nameInput"
+    class="form-control"
+    type="text"
+    placeholder="enter name"
+    (keyup.enter)="login(nameInput.value, passwordInput.value)"
+    #nameInput
+  />
+  <label class="control-label" for="passwordInput">Password</label>
+
+  <input
+    name="passwordInput"
+    class="form-control"
+    type="password"
+    placeholder="enter password"
+    (keyup.enter)="login(nameInput.value, passwordInput.value)"
+    #passwordInput
+  />
+  <br />
+  <div>
+    <p class="red">{{ errorMsg }}</p>
+  </div>
+  <p>
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="login(nameInput.value, passwordInput.value)"
+    >
+      LogIn
+    </button>
+    <button type="button" class="btn btn-primary" (click)="goToRegister()">
+      Go to Register
+    </button>
+  </p>
+</div>

@@ -1,0 +1,26 @@
+<ng-container *ngIf="connectedPlayers">
+  <h4 class="blue">Who's on?</h4>
+  <div class="scroll">
+    <table class="table table-hover">
+      <tbody>
+        <tr *ngFor="let player of connectedPlayers" class="table-info">
+          <ng-container *ngIf="currentPlayer.id !== player.id">
+            <td>
+              {{ player.name }}
+            </td>
+            <td>{{ player.totalWins }} wins</td>
+            <td>
+              <app-btn-request-game
+                [isDisabled]="player.isPlaying"
+                [otherPlayerId]="player.id"
+                [isRequestSent]="isRequestSent(player.id)"
+                (onGameRequest)="requestGame($event)"
+                (onCancelGameRequest)="cancelGameRequest($event)"
+              ></app-btn-request-game>
+            </td>
+          </ng-container>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ng-container>

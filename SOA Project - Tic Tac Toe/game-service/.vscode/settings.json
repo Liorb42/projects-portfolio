@@ -1,0 +1,4 @@
+{
+    "appService.deploySubpath": ".",
+    "appService.defaultWebAppToDeploy": "/subscriptions/a3fc76d9-34d0-498f-85e4-4d35cb1f4d4b/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/game-service-sela-soa-project"
+}

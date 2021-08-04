@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "AirportSimulatorLogic/1.0.0": {
+        "dependencies": {
+          "AirportSimulatorShared": "1.0.0"
+        },
+        "runtime": {
+          "AirportSimulatorLogic.dll": {}
+        }
+      },
+      "AirportSimulatorShared/1.0.0": {
+        "runtime": {
+          "AirportSimulatorShared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AirportSimulatorLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AirportSimulatorShared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

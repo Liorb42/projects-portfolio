@@ -1,0 +1,261 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorServer\\AirportSimulatorServer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorLogic\\AirportSimulatorLogic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorLogic\\AirportSimulatorLogic.csproj",
+        "projectName": "AirportSimulatorLogic",
+        "projectPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorLogic\\AirportSimulatorLogic.csproj",
+        "packagesPath": "C:\\Users\\Lior Barasovsky\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lior Barasovsky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorShared\\AirportSimulatorShared.csproj": {
+                "projectPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorShared\\AirportSimulatorShared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorServer\\AirportSimulatorServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorServer\\AirportSimulatorServer.csproj",
+        "projectName": "AirportSimulatorServer",
+        "projectPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorServer\\AirportSimulatorServer.csproj",
+        "packagesPath": "C:\\Users\\Lior Barasovsky\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lior Barasovsky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorLogic\\AirportSimulatorLogic.csproj": {
+                "projectPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorLogic\\AirportSimulatorLogic.csproj"
+              },
+              "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorShared\\AirportSimulatorShared.csproj": {
+                "projectPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorShared\\AirportSimulatorShared.csproj"
+              },
+              "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\FlightsGenerator\\FlightsGenerator.csproj": {
+                "projectPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\FlightsGenerator\\FlightsGenerator.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.13, 3.1.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorShared\\AirportSimulatorShared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorShared\\AirportSimulatorShared.csproj",
+        "projectName": "AirportSimulatorShared",
+        "projectPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorShared\\AirportSimulatorShared.csproj",
+        "packagesPath": "C:\\Users\\Lior Barasovsky\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorShared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lior Barasovsky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\FlightsGenerator\\FlightsGenerator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\FlightsGenerator\\FlightsGenerator.csproj",
+        "projectName": "FlightsGenerator",
+        "projectPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\FlightsGenerator\\FlightsGenerator.csproj",
+        "packagesPath": "C:\\Users\\Lior Barasovsky\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\FlightsGenerator\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lior Barasovsky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorShared\\AirportSimulatorShared.csproj": {
+                "projectPath": "C:\\Users\\Lior Barasovsky\\Desktop\\Sela\\Final Project\\myProject\\AirportSimulator\\AirportSimulatorShared\\AirportSimulatorShared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-7 col-s-7 block scroll">
+    <app-connected-players
+      [connectedPlayers]="playersInLobby"
+      [sentRequests]="sentRequests"
+      (onGameRequest)="requestGame($event)"
+      (onCancelGameRequest)="cancelGameRequest($event)"
+    ></app-connected-players>
+  </div>
+  <div class="col-5 col-s-5 block scroll">
+    <app-chat [roomName]="roomName"></app-chat>
+  </div>
+</div>
+<app-game-request
+  [recievedRequests]="recievedRequests"
+  (OnAcceptGameRequest)="acceptGameRequest($event)"
+  (OnDenyGameRequest)="denyGameRequest($event)"
+></app-game-request>
